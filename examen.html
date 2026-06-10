@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portafolio Personal</title>
+
+    <link rel="stylesheet" href="examen.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="descarga.jpg" alt="">
+        </div>
+
+        <h2 class="nombre">JEREMY</h2>
+
+        <p class="profesion">El Mero Jeremy</p>
+
+        <ul>
+
+            <li>
+                <a href="#" class="boton">
+                    <i class="fa-solid fa-user"></i>
+                    Sobre mí
+                </a>
+            </li>
+
+            <li>
+                <a href="segunda.html" class="boton">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Proyectos
+                
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#" class="boton">
+                    <i class="fa-solid fa-envelope"></i>
+                    Contacto
+                </a>
+            </li>
+
+        </ul>
+            <!-- SPOTIFY PLAYER -->
+
+<div class="spotify-box">
+
+    <h3>
+        <i class="fa-brands fa-spotify"></i>
+        Spotify
+    </h3>
+
+    <button id="loginSpotify" class="spotify-login">
+        Conectar Spotify
+    </button>
+
+    <div class="spotify-player">
+
+        <img id="cover"
+        src=""
+        alt="cover">
+
+        <h4 id="song">No hay canción</h4>
+
+        <p id="artist">---</p>
+
+        <div class="controles">
+
+            <button id="prev">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+
+            <button id="play">
+                <i class="fa-solid fa-play"></i>
+            </button>
+
+            <button id="next">
+                <i class="fa-solid fa-forward"></i>
+            </button>
+
+        </div>
+
+        <input
+        type="text"
+        id="buscar"
+        placeholder="Buscar canción...">
+
+        <div id="lyrics" class="lyrics">
+
+            La letra aparecerá aquí...
+
+        </div>
+
+    </div>
+
+</div>
+        <button class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Salir
+        </button>
+
+    </aside>
+
+    <main class="main">
+
+        <header>
+
+            <div>
+                <h1>JEREMY</h1>
+
+                <p>
+                    Bienvenido a mi sitio web personal
+                    (la maquina del jangueo)
+                </p>
+            </div>
+
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div class="icono-card">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h2>Sobre mí</h2>
+
+                <p>
+                    Me gusta el fulbito
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icono-card morado">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h2>Habilidades</h2>
+
+                <p>HTML</p>
+
+                <div class="barra">
+                    <div class="progreso html"></div>
+                </div>
+
+                <p>CSS</p>
+
+                <div class="barra">
+                    <div class="progreso css"></div>
+                </div>
+
+                <p>JavaScript</p>
+
+                <div class="barra">
+                    <div class="progreso js"></div>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icono-card verde">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h2>Estudios</h2>
+
+                <div class="estudio">
+
+                    <h3>Bachillerato</h3>
+                    <span>2019 - 2022</span>
+
+                </div>
+
+                <div class="estudio">
+
+                    <h3>Ingeniería en Sistemas</h3>
+                    <span>2022 - Actualidad</span>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icono-card rosado">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <h2>Objetivos</h2>
+
+                <p>
+                    Aprender desarrollo web y crear
+                    aplicaciones modernas e innovadoras.
+                </p>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="footer-top">
+
+                <span>
+                    <i class="fa-brands fa-tiktok"></i>
+                    Tiktok
+                </span>
+
+                <span>
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-envelope"></i>
+                    Correo
+                </span>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="examen.js"></script>
+<script src="spotify.js"></script>
+</body>
+</html>

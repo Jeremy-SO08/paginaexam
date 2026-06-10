@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #e9eef5;
+    padding: 20px;
+}
+
+.contenedor{
+    width: 400px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.proyecto{
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2d6df6;
+}
+
+.proyecto h2{
+    margin-bottom: 10px;
+}
+
+.proyecto p{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2d6df6;
+    color: white;
+    cursor: pointer;
+}
+
+button.ver:hover{
+    background: #1a4bb8;
+    
+}

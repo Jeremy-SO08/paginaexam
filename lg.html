@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Programas Python</title>
+
+    <link rel="stylesheet" href="ver.css">
+</head>
+<body>
+
+    <h1>Carrera de Buses</h1>
+
+    <div class="contenedor">
+
+        <div class="programa">
+            <h2>Carrera de Buses</h2>
+            <p>Programa básico para simular una carrera de buses.</p>
+
+            <pre>
+                import random
+import time
+import os
+
+class Bus:
+    def __init__(self, nombre, simbolo):
+        self.nombre = nombre
+        self.posicion = 0
+        self.simbolo = simbolo
+
+    def avanzar(self):
+        avance = random.randint(1, 4)
+        self.posicion += avance
+
+
+def limpiar_pantalla(): 
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
+
+def mostrar_pista(bus1, bus2, meta):
+    pista1 = " " * bus1.posicion + bus1.simbolo
+    pista2 = " " * bus2.posicion + bus2.simbolo
+
+    print(f"{bus1.nombre}:")
+    print("|" + pista1)
+    print("-" * (meta + 5))
+
+    print(f"{bus2.nombre}:")
+    print("|" + pista2)
+    print("-" * (meta + 5))
+
+
+def carrera():
+    meta = 50
+
+    bus1 = Bus("Bus Rojo", "🚌")
+    bus2 = Bus("Bus Azul", "🚌")
+
+   
+
+    print("🏁 ¡Carrera de buses!\n")
+    
+    input("Presiona ENTER para comenzar...")
+
+    while bus1.posicion < meta and bus2.posicion < meta:
+        limpiar_pantalla()
+
+        bus1.avanzar()
+        bus2.avanzar()
+
+        mostrar_pista(bus1, bus2, meta)
+
+        time.sleep(0.5)
+
+    print("\n🏆 RESULTADO FINAL 🏆")
+
+    if bus1.posicion >= meta and bus2.posicion >= meta:
+        print("🤝 ¡Empate!")
+    elif bus1.posicion >= meta:
+        print(f"🎉 ¡Ganó {bus1.nombre}!")
+    else:
+        print(f"🎉 ¡Ganó {bus2.nombre}!")
+
+
+# Ejecutar
+carrera()
+limpiar_pantalla()
+            </pre>
+        </div>
+
+    </div>
+
+</body>
+</html>

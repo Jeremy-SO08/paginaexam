@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Programas Python</title>
+
+    <link rel="stylesheet" href="ver.css">
+</head>
+<body>
+
+    <h1>Calculadora Python</h1>
+
+    <div class="contenedor">
+
+        <div class="programa">
+            <h2>Calculadora</h2>
+            <p>Programa básico para realizar operaciones matemáticas.</p>
+
+            <pre>
+                # =====================================
+#        CALCULADORA BÁSICA
+# =====================================
+
+while True:
+    print("\n" + "=" * 40)
+    print("         CALCULADORA BÁSICA")
+    print("=" * 40)
+    print("  1. ➕ Sumar")
+    print("  2. ➖ Restar")
+    print("  3. ✖ Multiplicar")
+    print("  4. ➗ Dividir")
+    print("  5. 🚪 Salir")
+    print("=" * 40)
+
+    opcion = input("Seleccione una opción (1-5): ")
+
+    if opcion == "5":
+        print("\n¡Gracias por usar la calculadora!")
+        break
+
+    if opcion in ["1", "2", "3", "4"]:
+        try:
+            num1 = float(input("\nIngrese el primer número: "))
+            num2 = float(input("Ingrese el segundo número: "))
+
+            if opcion == "1":
+                resultado = num1 + num2
+                operacion = "+"
+
+            elif opcion == "2":
+                resultado = num1 - num2
+                operacion = "-"
+
+            elif opcion == "3":
+                resultado = num1 * num2
+                operacion = "*"
+
+            elif opcion == "4":
+                if num2 == 0:
+                    print("\n❌ Error: No se puede dividir entre cero.")
+                    continue
+                resultado = num1 / num2
+                operacion = "/"
+
+            print("\n" + "-" * 40)
+            print(f" Resultado: {num1} {operacion} {num2} = {resultado}")
+            print("-" * 40)
+
+        except ValueError:
+            print("\n❌ Error: Debe ingresar números válidos.")
+
+    else:
+        print("\n❌ Opción no válida. Intente nuevamente.")
+            </pre>
+        </div>
+
+    </div>
+
+</body>
+</html>
