@@ -667,3 +667,24 @@ footer{
 
     text-align: left;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(max-width:900px){
+
+    .sidebar{
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .boton{
+        justify-content: center;
+    }
+
+    .logout{
+        text-align: center;
+    }
+}

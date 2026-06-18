@@ -48,3 +48,66 @@ pre{
     overflow-x: auto;
     font-family: Consolas, monospace;
 }
+
+/* Tablets */
+@media (max-width: 768px){
+
+    body{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .programa{
+        padding: 15px;
+    }
+
+    .programa h2{
+        font-size: 22px;
+    }
+
+    .programa p{
+        font-size: 15px;
+    }
+
+    pre{
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px){
+
+    body{
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .programa{
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .programa h2{
+        font-size: 18px;
+    }
+
+    .programa p{
+        font-size: 14px;
+    }
+
+    pre{
+        font-size: 11px;
+        line-height: 1.4;
+        padding: 10px;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+}
